@@ -4,134 +4,41 @@
     <meta charset="utf-8">
     <title>MSJF</title>
     <!-- styling CDNs -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/node_modules/angular-material/angular-material.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
-<header>
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-        </div>
-        <div class="parallax"><img src="images/header-placeholder.png" alt="background img 1"></div>
-    </div>
+<body ng-app="msjf">
+<header ng-include="'partials/header.html'"></header>
 
-    <nav>
-        <div class="nav-wrapper brown darken-1">
-            <a href="#!" class="brand-logo">Michaux-St.James Foundation</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#!">Current Events</a></li>
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="wedding_dropdown">Weddings<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="#!">Restoration</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="history_dropdown">History<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="membership_dropdown">Membership<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
-                <li><a href="#!">About Us</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="dropdowns">
-        <ul id="wedding_dropdown" class="dropdown-content">
-            <li><a class="brown-text" href="#!">Information and Photos</a></li>
-            <li><a class="brown-text" href="#!">Book a Chapel Tour</a></li>
-        </ul>
-        <ul id="history_dropdown" class="dropdown-content">
-            <li><a class="brown-text" href="#!">Michaux Family</a></li>
-            <li><a class="brown-text" href="#!">Foundation</a></li>
-            <li><a class="brown-text" href="#!">Local</a></li>
-        </ul>
-        <ul id="membership_dropdown" class="dropdown-content">
-            <li><a class="brown-text" href="#!">New Membership</a></li>
-            <li><a class="brown-text" href="#!">Renew Membership</a></li>
-            <li><a class="brown-text" href="#!">Gift a Membership</a></li>
-        </ul>
-    </div>
-</header>
-<main class="container">
-    <div class="row">
-        <div class="col s12 m9">
-            <h3 class="header brown-text">Current Newsletter</h3>
-            <div class="card horizontal">
-                <div class="card-image">
-                    <img src="images/sallie_michaux__house.jpg">
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>We are very proud to let members and friends of the Michaux St. James Foundation (MSJF) know
-                            that together, we have fully completed ALL of the historical restoration work on the
-                            beautiful Sallie W. Michaux House (circa 1868).<br><br>
-                            How appropriate an accomplishment as the Sallie Michaux House turns 150 years old in the
-                            next year. <br><br>
-                            There are many people who deserve lots of thanks for this huge accomplishment, but first and
-                            foremost we must thank Carson Tucker who loaned and donated significant funds to allow the
-                            MSJ Foundation to purchase the home in 2009.
+<main class="container" ng-view>
 
-                        </p>
-
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Continue Reading</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col l3 hide-on-small-only call-to-action">
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/msjf_chapel.jpg">
-                    <span class="card-title center"><a class="white-text" href="#">Click to join MSJF!</a></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12 m9">
-            <h3 class="header brown-text">Upcoming Event</h3>
-            <div class="card horizontal">
-                <div class="card-image">
-                    <img src="images/msjf_bluegrass.jpg">
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>On Saturday, October 14th at 5PM – We are so very excited to have our first “Spaghetti
-                            Dinner” to be prepared in the recently restored Sallie Michaux House kitchen.
-                            <br>
-                            Please call Sara at 598-3590 or email her at semcorbett@gmail.com to make your reservations
-                            (we need to get a head count for this first Spaghetti dinner so we are well prepared).
-                            <br>
-                            Please let Sara
-                            know if you can help the day of the event. Cost will be $15 per person and includes; dinner,
-                            wine and beer.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">View All Events</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col l3 hide-on-small-only call-to-action">
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/small_image_placeholder.png">
-                    <span class="card-title center"><a class="white-text"
-                                                       href="#">View Michaux Family Geneology !</a></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 </main>
-<footer>
-
+<footer class="page-footer brown darken-2">
+    <div class="container white-text">
+        © 2017 Michaux~St. James Foundation
+    </div>
 </footer>
 
+<!-- node module scripts -->
+<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!-- APP.JS -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/values/fb-creds.js"></script>
+
+<!-- NG FACTORIES -->
+<script type="text/javascript" src="app/Factories/firebaseServices.js"></script>
+
+<!-- NG CONTROLLERS -->
+<script type="text/javascript" src="app/Controllers/HomeCtrl.js"></script>
+<script type="text/javascript" src="app/Controllers/MembershipCtrl.js"></script>
+
 </body>
 </html>

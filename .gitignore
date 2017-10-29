@@ -13,3 +13,5 @@ $RECYCLE.BIN/
 *.iml
 out
 gen
+lib/node_modules
+app/fbcreds.js

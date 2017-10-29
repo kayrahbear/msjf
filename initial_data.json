@@ -1,0 +1,98 @@
+{
+    "newsletter":[
+        {
+            "key": "value",
+            "key2": "value2",
+            "key3": "value3"
+        }
+    ],
+    "current_event":[
+        {
+            "key": "value",
+            "key2": "value2",
+            "key3": "value3"
+        }
+    ],
+    "members":[
+        {
+            "first_name": "Martha",
+            "last_name": "Bickford",
+            "mailing_address": "561 Martha Custis",
+            "city": "Alexandira",
+            "state": "VA",
+            "zipcode": "22302",
+            "phone": "703-731-7992",
+            "email": "martyb@martfour.com"
+        },
+        {
+            "first_name": "Linda & Jimmy",
+            "last_name": "Buchanan",
+            "mailing_address": "19300 Bowles Knob Drive",
+            "city": "Rockville",
+            "state": "VA",
+            "zipcode": "23146",
+            "phone": "804-356-4045",
+            "email": "jmmbuchanan@hotmail.com"
+        },
+        {
+            "first_name": "Tricia & Luther",
+            "last_name": "Alexander",
+            "mailing_address": "4720 Fielding Drive",
+            "city": "Raleigh",
+            "state": "NC",
+            "zipcode": "27606",
+            "phone": "919-233-2978",
+            "email": "patricia.alexander31@yahoo.com"
+        },
+        {
+            "first_name": "Judy & Michaux",
+            "last_name": "Buchanan",
+            "mailing_address": "300 N. Ridge Road Unit #69",
+            "city": "Henrico",
+            "state": "VA",
+            "zipcode": "23229",
+            "phone": "804-282-2657",
+            "email": "tobwmb7628@aol.com"
+        },
+        {
+            "first_name": "Buck",
+            "last_name": "Buchanan",
+            "mailing_address": "821 Church Street",
+            "city": "Alexandria",
+            "state": "VA",
+            "zipcode": "22314",
+            "phone": "917-566-4848",
+            "email": ""
+        },
+        {
+            "first_name": "Alice",
+            "last_name": "Buchanan-Scott",
+            "mailing_address": "402 Glendale Drive",
+            "city": "Henrico",
+            "state": "VA",
+            "zipcode": "23229",
+            "phone": "804-852-9294",
+            "email": "alicebscott@gmail.com"
+        },
+        {
+            "first_name": "Henry",
+            "last_name": "Bullock",
+            "mailing_address": "490 S California Avenue  4th Floor",
+            "city": "Palo Alto",
+            "state": "CA",
+            "zipcode": "94306",
+            "phone": "",
+            "email": "bullock@menloequities.com"
+        },
+        {
+            "first_name": "Brent",
+            "last_name": "Bullock",
+            "mailing_address": "1523 Clower Creek Dr. # 251",
+            "city": "Sarasota",
+            "state": "FL",
+            "zipcode": "34231",
+            "phone": "914-966-1423",
+            "email": "kneadbull@aol.com"
+        }
+    ]
+  }
