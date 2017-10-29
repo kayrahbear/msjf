@@ -10,6 +10,9 @@ app.config(function ($routeProvider) {
     }).when('/home', {
         templateUrl: 'partials/home.html',
         controller: "HomeCtrl"
+    }).when('/aboutus', {
+        templateUrl: 'partials/aboutus.html',
+        controller: "HomeCtrl"
     }).when('/membership', {
         templateUrl: 'partials/membership.html',
         controller: "MembershipCtrl"
